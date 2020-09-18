@@ -1,0 +1,19 @@
+
+#配置服务器
+server:
+  port: 28080 #服务器端口
+  servlet:
+    context-path: /fs #应用上下文路径
+
+spring:
+  servlet:
+    multipart: #配置文件上传
+      enabled: true
+      max-file-size: 1000MB #设置上传的单个文件最大值，单位可以是 MB、KB，默认为 1MB
+      max-request-size: 10000MB #设置多文件上传时，单次内多个文件的总量的最大值，单位可以是 MB、KB，默认为 10 M
+
+upload:
+  path: E://HttpFileSystem/files #自定义上传文件本地保存路径
+
+
+
